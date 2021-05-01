@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+
+    
+<!-- Mirrored from themesbrand.com/lexa/layouts/purple/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Apr 2021 06:01:12 GMT -->
+<head>
+
+        <meta charset="utf-8" />
+        <title>Dashboard | </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Bootstrap Css -->
+        <link href="assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+        <link href="assets/libs/spectrum-colorpicker2/spectrum.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
+        
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+        <link href="assets/libs/ion-rangeslider/css/ion.rangeSlider.min.css" rel="stylesheet" type="text/css" />
+        <style>
+            .black{
+                color: #000;
+            }
+        </style>
+    </head>
+
+    
+    <body data-sidebar="dark">
+
+    <!-- <body data-layout="horizontal" data-topbar="colored"> -->
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            
+            <header id="page-topbar">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box">
+                            <a href="index.html" class="logo logo-dark">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm.png" alt="" height="22">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-dark.png" alt="" height="17">
+                                </span>
+                            </a>
+
+                            <a href="index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm.png" alt="" height="22">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-light.png" alt="" height="18">
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect vertical-menu-btn">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+
+                        <div class="d-none d-sm-block">
+                            <div class="dropdown dropdown-topbar pt-3 mt-1 d-inline-block">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex">
+
+                        <!-- App Search-->
+                        <form class="app-search d-none d-lg-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="fa fa-search"></span>
+                            </div>
+                        </form>
+
+                        <div class="dropdown d-inline-block d-lg-none ml-2">
+                           
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                                aria-labelledby="page-header-search-dropdown">
+                    
+                                <form class="p-3">
+                                    <div class="form-group m-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                       
+
+                        <div class="dropdown d-inline-block ms-1">
+                            <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="ti-bell"></i>
+                                <span class="badge bg-danger rounded-pill">3</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                aria-labelledby="page-header-notifications-dropdown">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h5 class="m-0"> Notifications (258) </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-simplebar style="max-height: 230px;">
+                                    <a href="#" class="text-reset notification-item">
+                                        <div class="media">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title border-success rounded-circle ">
+                                                    <i class="mdi mdi-cart-outline"></i>
+                                                </span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">Your order is placed</h6>
+                                                <div class="text-muted">
+                                                    <p class="mb-1">If several languages coalesce the grammar</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="text-reset notification-item">
+                                        <div class="media">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title border-warning rounded-circle ">
+                                                    <i class="mdi mdi-message"></i>
+                                                </span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">New Message received</h6>
+                                                <div class="text-muted">
+                                                    <p class="mb-1">You have 87 unread messages</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="text-reset notification-item">
+                                        <div class="media">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title border-info rounded-circle ">
+                                                    <i class="mdi mdi-glass-cocktail"></i>
+                                                </span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">Your item is shipped</h6>
+                                                <div class="text-muted">
+                                                    <p class="mb-1">It is a long established fact that a reader will</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="text-reset notification-item">
+                                        <div class="media">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title border-primary rounded-circle ">
+                                                    <i class="mdi mdi-cart-outline"></i>
+                                                </span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">Your order is placed</h6>
+                                                <div class="text-muted">
+                                                    <p class="mb-1">Dummy text of the printing and typesetting industry.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="text-reset notification-item">
+                                        <div class="media">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title border-warning rounded-circle ">
+                                                    <i class="mdi mdi-message"></i>
+                                                </span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">New Message received</h6>
+                                                <div class="text-muted">
+                                                    <p class="mb-1">You have 87 unread messages</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="p-2 border-top">
+                                    <a class="btn btn-sm btn-link font-size-14 w-100 text-center" href="javascript:void(0)">
+                                        View all
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+            
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="assets/images/users/user-4.jpg"
+                                    alt="Header Avatar">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle font-size-17 text-muted align-middle me-1"></i> Profile</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power font-size-17 text-muted align-middle me-1 text-danger"></i> Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="vertical-menu">
+
+                <div data-simplebar class="h-100">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu list-unstyled" id="side-menu">
+                            <li class="menu-title">Main</li>
+
+                            <li>
+                                <a href="index.html" class="waves-effect">
+                                    <i class="mdi mdi-view-dashboard"></i>
+                                    <span class="badge rounded-pill bg-primary float-end">2</span>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="waves-effect">
+                                    <i class="mdi mdi-view-dashboard"></i>
+                                    <span class="badge rounded-pill bg-primary float-end">2</span>
+                                    <span>My Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="waves-effect">
+                                    <i class="mdi mdi-view-dashboard"></i>
+                                    <span class="badge rounded-pill bg-primary float-end">2</span>
+                                    <span>Vendors</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="waves-effect">
+                                    <i class="mdi mdi-view-dashboard"></i>
+                                    <span class="badge rounded-pill bg-primary float-end">2</span>
+                                    <span>Items</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="mdi mdi-email-outline"></i>
+                                    <span>BOQ</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="email-inbox.html">Inbox</a></li>
+                                    <li><a href="email-read.html">Email Read</a></li>
+                                    <li><a href="email-compose.html">Email Compose</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Sidebar -->
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+            
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+                <div class="page-content">
+                   
+                    <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+
+                                        <div class="row">
+                                            <div class="col-md-3 mt-2">
+                                               <h5>Project ID</h5> 
+                                            </div>
+                                            <div class="col-md-3 mt-2">
+                                                <h5>Custormer Name</h5> 
+                                            </div>
+                                            <div class="col-md-3 mt-2">
+                                                <h5>Status</h5> 
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="d-flex gap-2 flex-wrap mb-3">
+                                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" title="add members to the sales team">
+                                                       Project Team 
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="collapse show" id="collapseExample">
+                                                <div class="card border shadow-none card-body mb-0">
+                                                    <div class="col-md-12">
+                                                        <form action="">
+                                                         <div class="form-group mb-0">
+                                                             
+             
+                                                             <select class="select2 form-control select2-multiple" multiple="multiple"    multiple data-placeholder="Add Members to the team">
+                                                                 <optgroup label="">
+                                                                     <option value="AK">Alaska</option>
+                                                                     <option value="HI">Hawaii</option>
+                                                                 </optgroup>
+                                                             </select>
+             
+                                                         </div>
+                                                        </form>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                      <hr>
+                                        <div class=" row col-md-12">
+                                            <div class="col md-4">
+                                                <h4 ><a class="black" href="">Summary</a></h4>
+                                            </div>
+                                            <div class="col md-4">
+                                                <h4><a href="">BOQ</a></h4>
+                                            </div>
+                                            <div class="col md-4">
+                                                <h4><a href="">Finances</a></h4>
+                                            </div>
+                                            <div class="col md-4">
+                                                <h4 class=center><a href="">Files</a></h4>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                    
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <h4 class="card-title">BOQ List's</h4>
+                                    <p class="card-title-desc">DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function: <code>$().DataTable();</code>.
+                                    </p>
+
+                                    <div>
+                                        <div class="col-lg-12">
+                                            <div class="mt-4">
+                                                
+                                                <form>
+                                                    
+                                                    <div class="row">                                                            
+                                                        <div class="col-md-6">
+                                                            <div class="mb-3">
+                                                                <input type="email" class="form-control" id="formrow-email-input" placeholder="filter option for project grid">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="mb-3">
+                                                                <button type="submit" class="btn btn-primary w-md">Create BOQ</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                        <thead>
+                                            <tr>
+                                                <th>BOQ Name</th>
+                                                <th>BOQ Status</th>
+                                                <th>Create Date</th>
+                                                <th>Expiry Date</th>
+                                                <th>Cx share Date</th>
+                                                <th>Item Total</th>
+                                                <th>Discounts</th>
+                                                <th>Taxes</th>
+                                                <th>Gross Total</th>
+                                                <th><a href="">Details</a></th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>Tiger Nixon</td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>$320,800</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>$320,800</td>
+                                                <td><a href="">View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Garrett Winters</td>
+                                                <td>Accountant</td>
+                                                <td>Tokyo</td>
+                                                <td>63</td>
+                                                <td>2011/07/25</td>
+                                                <td>$170,750</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>$320,800</td>
+                                                <td><a href="">View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ashton Cox</td>
+                                                <td>Junior Technical Author</td>
+                                                <td>San Francisco</td>
+                                                <td>66</td>
+                                                <td>2009/01/12</td>
+                                                <td>$86,000</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>$320,800</td>
+                                                <td><a href="">View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cedric Kelly</td>
+                                                <td>Senior Javascript Developer</td>
+                                                <td>Edinburgh</td>
+                                                <td>22</td>
+                                                <td>2012/03/29</td>
+                                                <td>$433,060</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>$320,800</td>
+                                                <td><a href="">View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Airi Satou</td>
+                                                <td>Accountant</td>
+                                                <td>Tokyo</td>
+                                                <td>33</td>
+                                                <td>2008/11/28</td>
+                                                <td>$162,700</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>$320,800</td>
+                                                <td><a href="">View</a></td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                      <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="p-3">
+                                                <h5 class="font-size-14 mb-3 mt-0">Stages: Current Stage</h5>
+                                                <input type="text" id="range_01">
+                                            </div>
+                                        </div>
+                                    </div> <hr>
+                                    <div>
+                                        <p> <h5>Assigned Date: </h5></p>
+                                        <p><h5>Aging:</h5></p>
+                                    </div> <hr>
+                                    <div>
+                                        <div class="d-flex gap-2 flex-wrap mb-3">
+                                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                                <span>+</span> Create Task
+                                            </a>
+                                            
+                                        </div>
+
+                                        <div class="collapse show" id="collapseExample">
+                                            <div class="card border shadow-none card-body mb-2">
+                                               <form action="">
+                                                <div class="row">                                                            
+                                                    
+                                                    <div class="col-md-8">
+                                                        
+                                                        <input type="text" class="form-control" id="formrow-email-input" placeholder="Enter Subject">
+                                                    </div>
+                                                
+                                                    <div class="col-md-4">
+                                                        <button type="submit" class="btn btn-primary w-md">Add</button>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-3">
+                                                    <h4 class="mb-2">Tasks</h4>
+                                                    <div class="">
+                                                       
+                                                        <div class="alert alert-info alert alert-dismissible fade show" role="alert">
+                                                            <input type="checkbox" class="" id="formrow-customCheck"> &nbsp;
+                                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                                                            </button>
+                                                            <strong>Well done!</strong> You successfully read this important alert message.
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                       
+                                                        <div class="alert alert-info alert alert-dismissible fade show" role="alert">
+                                                            <input type="checkbox" class="" id="formrow-customCheck"> &nbsp;
+                                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                                                            </button>
+                                                            <strong>Well done!</strong> You successfully read this important alert message.
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                       
+                                                        <div class="alert alert-info alert alert-dismissible fade show" role="alert">
+                                                            <input type="checkbox" class="" id="formrow-customCheck"> &nbsp;
+                                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                                                            </button>
+                                                            <strong>Well done!</strong> You successfully read this important alert message.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               </form>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex gap-2 flex-wrap mb-3">
+                                            <a class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                                                <span>+</span> Create Meeting
+                                            </a>
+                                        </div>
+                                        <div class="collapse show" id="collapseExample2">
+                                            <div class="card border shadow-none card-body mb-0">
+                                               <form action="">
+                                                <div class="row">                                                            
+                                                    
+                                                    <div class="col-md-8">
+                                                        
+                                                        <input type="text" class="form-control" id="formrow-email-input" placeholder="Meeting invite">
+                                                    </div>
+                                                
+                                                    <div class="col-md-4">
+                                                        <button type="submit" class="btn btn-primary w-md">Add</button>
+                                                    </div>
+                                                </div>
+                                               </form>
+                                                <div class="mt-3">
+                                                    <h5>Meetings</h5>
+                                                    <p>http://jhgefefyuefheyfefgvefefgvhg</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    
+                </div>
+                <footer class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                © <script>document.write(new Date().getFullYear())</script> Lexa <span class="d-none d-sm-inline-block"> - Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand.</span>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>            
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+        <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+        <script src="assets/libs/select2/js/select2.min.js"></script>
+        <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <script src="assets/libs/spectrum-colorpicker2/spectrum.min.js"></script>
+        <script src="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+        <script src="assets/libs/admin-resources/bootstrap-filestyle/bootstrap-filestyle.min.js"></script>
+        <script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+
+        <script src="assets/js/pages/form-advanced.init.js"></script>
+        <!-- Ion Range Slider-->
+        <script src="assets/libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+
+        <!-- Range slider init js-->
+        <script src="assets/js/pages/range-sliders.init.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+
+    </body>
+
+
+
+</html>
