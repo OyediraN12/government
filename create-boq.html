@@ -14,8 +14,8 @@
         <link rel="shortcut icon" href="assets/images/favicon.ico">
 
         <!-- Bootstrap Css -->
-        
-        
+        <link href="assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" /> 
+
         <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
         <!-- Icons Css -->
         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
@@ -302,67 +302,72 @@
                                     </div>
                                    
     
-                                    <div>
+                                    <div style="margin-top: 50px;">
                                         <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                             <thead>
                                                 <tr>
-                                                    <th>Item Name/th>
+                                                    <th>Item Name</th>
                                                     <th>Unit Of Measure</th>
                                                     <th>Lenght(Inches)</th>
                                                     <th>Breadth(Inches)</th>
-                                                    <th>Payment Status</th>
-                                                    <th>Requirement Brief</th>
-                                                    <th>View Details</th>
+                                                    <th>Quantity / Area</th>
+                                                    <th>Rates</th>
+                                                    <th>Tax Amount </th>
+                                                    <th title="quantity*rate">Price</th>
+                                                    <th>Edit</th>
                                                 </tr>
                                             </thead>
     
                                             <tbody>
                                                 <tr>
-                                                    <td style="width: 80px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati corrupti praesentium magnam aliquid nulla unde culpa nostrum, sunt consectetur recusandae earum sequi, aperiam excepturi ducimus expedita illo voluptate ea numquam? Tiger Nixon</td>
+                                                    <td style="width: 300px;"><h5>Sanitation</h5>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quaerat quasi pariatur, delectus beatae a ducimus consectetur nisi corporis, saepe, alias molestias incidunt soluta sint repudiandae veritatis recusandae atque velit.</p>
+                                                    </td>
                                                     <td>System Architect</td>
                                                     <td>Edinburgh</td>
                                                     <td>61</td>
                                                     <td>2011/04/25</td>
                                                     <td>$320,800</td>
-                                                    <td><a href="">View</a></td>
+                                                   <th>efefef</th>
+                                                   <th>efefef</th>
+                                                   <th> <a class="btn btn-outline-secondary btn-sm edit" title="Edit" href="">
+                                                    <i class="fas fa-pencil-alt"></i>
+                                                    </a></th>
+
+
                                                 </tr>
                                                 <tr>
-                                                    <td>Garrett Winters</td>
+                                                    <td style="width: 300px;"><h5>Sanitation</h5>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quaerat quasi pariatur, delectus beatae a ducimus consectetur nisi corporis, saepe, alias molestias incidunt soluta sint repudiandae veritatis recusandae atque velit.</p>
+                                                    </td>
                                                     <td>Accountant</td>
                                                     <td>Tokyo</td>
                                                     <td>63</td>
                                                     <td>2011/07/25</td>
                                                     <td>$170,750</td>
-                                                    <td><a href="">View</a></td>
+                                                   <th>efefef</th>
+                                                   <th>efefef</th>
+                                                   <th> <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
+                                                    <i class="fas fa-pencil-alt"></i>
+                                                </a></th>
+
+
                                                 </tr>
                                                 <tr>
-                                                    <td>Ashton Cox</td>
+                                                    <td style="width: 300px;"><h5>Sanitation</h5>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quaerat quasi pariatur, delectus beatae a ducimus consectetur nisi corporis, saepe, alias molestias incidunt soluta sint repudiandae veritatis recusandae atque velit.</p>
+                                                    </td>
                                                     <td>Junior Technical Author</td>
                                                     <td>San Francisco</td>
                                                     <td>66</td>
                                                     <td>2009/01/12</td>
                                                     <td>$86,000</td>
-                                                    <td><a href="">View</a></td>
+                                                   <th>efefef</th>
+                                                   <th>efefef</th>
+                                                   <th> <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
+                                                    <i class="fas fa-pencil-alt"></i>
+                                                </a></th>
                                                 </tr>
-                                                <tr>
-                                                    <td>Cedric Kelly</td>
-                                                    <td>Senior Javascript Developer</td>
-                                                    <td>Edinburgh</td>
-                                                    <td>22</td>
-                                                    <td>2012/03/29</td>
-                                                    <td>$433,060</td>
-                                                    <td><a href="">View</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Airi Satou</td>
-                                                    <td>Accountant</td>
-                                                    <td>Tokyo</td>
-                                                    <td>33</td>
-                                                    <td>2008/11/28</td>
-                                                    <td>$162,700</td>
-                                                    <td><a href="">View</a></td>
-                                                </tr>
-                                                
                                             </tbody>
                                         </table>
                                     </div>
@@ -371,6 +376,55 @@
                         </div>
                         <!-- end col -->
                     </div>
+
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <form action="">
+                                            <textarea  class="form-control" rows="5" cols="7">Comment picked from set up and editable</textarea>
+                                            <div class="mt-3">
+                                                <div class="row">
+                                                    <div class="col-sm-5"> <button type="submit" class="btn btn-primary waves-effect waves-light me-1">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect">
+                                                        Cancel
+                                                    </button>
+                                                    <button type="button" class="btn btn-primary waves-effect waves-light me-1" id="sa-params">
+                                                        Save and Send
+                                                    </button>
+                                                </div>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p> <span class="price">Item Total : </span> 657557 </p>
+                                        <p><span class="price">CGST :</span> &nbsp; &nbsp; <span>SGST :</span></p>
+                                        <div>
+                                            
+                                            <form class="row gx-3 gy-2 align-items-center">
+                                                <div class="col-sm-4">
+                                                  <label class="visually-hidden" for="specificSizeInputName">Discounts</label>
+                                                  <input type="text" class="form-control" id="specificSizeInputName" placeholder="20">
+                                                </div>
+                                                
+                                                <div class="col-auto">
+                                                  <button type="submit" class="btn btn-primary">Submit</button>
+                                                </div>
+                                              </form>
+                                        </div>
+                                        <p class="mt-2"> <span class="price">Gross Ammount : </span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <footer class="footer">
                     <div class="container-fluid">
@@ -407,6 +461,10 @@
 
         <!-- App js -->
         <script src="assets/js/app.js"></script>
+        <script src="assets/libs/sweetalert2/sweetalert2.min.js"></script>
+
+        <!-- Sweet alert init js-->
+        <script src="assets/js/pages/sweet-alerts.init.js"></script>
 
       
 
