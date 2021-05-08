@@ -20,19 +20,11 @@
     <link href="assets/libs/spectrum-colorpicker2/spectrum.min.css" rel="stylesheet" type="text/css">
     <link href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
 
-    <!-- Bootstrap Css -->
     <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-
-    <link href="assets/libs/ion-rangeslider/css/ion.rangeSlider.min.css" rel="stylesheet" type="text/css" />
-    <style>
-        .black {
-            color: #000;
-        }
-    </style>
 </head>
 
 
@@ -294,298 +286,181 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-
-                                <div class="row">
+                                <div class="row mt-2 mb-4">
                                     <div class="col-md-3 mt-2">
                                         <h5>Project ID</h5>
                                     </div>
                                     <div class="col-md-3 mt-2">
-                                        <h5>Custormer Name</h5>
+                                        <h5>BOQ Name</h5>
                                     </div>
                                     <div class="col-md-3 mt-2">
-                                        <h5>Status</h5>
+                                        <h5>BOQ Status</h5>
                                     </div>
                                     <div class="col-md-3">
-                                        <div class="d-flex gap-2 flex-wrap mb-3">
-                                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" title="add members to the sales team">
-                                                       Project Team 
-                                                    </a>
-                                        </div>
+                                        <h5>Expiry Date</h5>
                                     </div>
+                                </div>
 
-                                    <div class="collapse show" id="collapseExample">
-                                        <div class="card border shadow-none card-body mb-0">
-                                            <div class="col-md-12">
+
+                                <div style="margin-top: 50px;">
+                                    <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                        <thead>
+                                            <tr>
+                                                <th>Item Name</th>
+                                                <th>Unit Of Measure</th>
+                                                <th>Lenght(Inches)</th>
+                                                <th>Breadth(Inches)</th>
+                                                <th>Quantity / Area</th>
+                                                <th>Rates</th>
+                                                <th>Tax Amount </th>
+                                                <th title="quantity*rate">Price</th>
+                                                <th>Save</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
                                                 <form action="">
-                                                    <div class="form-group mb-0">
+                                                    <td style="width: 300px;">
+                                                        <div class="mb-3">
+                                                            <select class="form-control select2">
+                                                                <option>Type or Click to Select an item</option>
+                                                                <optgroup>
+                                                                    <option value="AK">Sanitation</option>
+                                                                    <option value="HI">Hawaii</option>
+                                                                </optgroup>
+                                                            </select>
+                                                        </div>
 
-
-                                                        <select class="select2 form-control select2-multiple" multiple="multiple" multiple data-placeholder="Add Members to the team">
-                                                                 <optgroup label="">
-                                                                     <option value="AK">Alaska</option>
-                                                                     <option value="HI">Hawaii</option>
-                                                                 </optgroup>
-                                                             </select>
-
-                                                    </div>
+                                                        <p>
+                                                            <h5>Description</h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quaerat quasi pariatur, delectus beatae a ducimus consectetur nisi corporis, saepe, alias molestias incidunt soluta
+                                                            sint repudiandae veritatis recusandae atque velit.</p>
+                                                    </td>
+                                                    <td><input type="text" class="form-control" placeholder="U(measure)"> </td>
+                                                    <td><input type="text" class="form-control" placeholder="L(inches)"></td>
+                                                    <td><input type="text" class="form-control" placeholder="B(Breadth) " disable></td>
+                                                    <td><input type="text" class="form-control" placeholder="Quantity" disabled></td>
+                                                    <td><input type="text" class="form-control" placeholder="rates"></td>
+                                                    <th><input type="text" class="form-control" placeholder="tax amount" disable></th>
+                                                    <th><input type="text" class="form-control" placeholder="Price" disabled></th>
                                                 </form>
+                                            </tr>
+                                            <tr>
+                                                <form action="">
+                                                    <td style="width: 300px;">
+                                                        <div class="mb-3">
+                                                            <select class="form-control select2">
+                                                                <option>Type or Click to Select an item</option>
+                                                                <optgroup>
+                                                                    <option value="AK">Sanitation</option>
+                                                                    <option value="HI">Hawaii</option>
+                                                                </optgroup>
+                                                            </select>
+                                                        </div>
+
+                                                        <p>
+                                                            <h5>Description</h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quaerat quasi pariatur, delectus beatae a ducimus consectetur nisi corporis, saepe, alias molestias incidunt soluta
+                                                            sint repudiandae veritatis recusandae atque velit.</p>
+                                                    </td>
+                                                    <td><input type="text" class="form-control" placeholder="U(measure)"> </td>
+                                                    <td><input type="text" class="form-control" placeholder="L(inches)"></td>
+                                                    <td><input type="text" class="form-control" placeholder="B(Breadth) " disable></td>
+                                                    <td><input type="text" class="form-control" placeholder="Quantity" disabled></td>
+                                                    <td><input type="text" class="form-control" placeholder="rates"></td>
+                                                    <th><input type="text" class="form-control" placeholder="tax amount" disable></th>
+                                                    <th><input type="text" class="form-control" placeholder="Price" disabled></th>
+                                                </form>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- add a new line button -->
+                                <div>
+                                    <button type="submit" class="btn btn-secondary">Add another line</button>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-8">
+                                        <form action="">
+
+                                            <textarea name="" id="" cols="30" rows="10" class="form-control" disabled> Comments picked from the setup and ediitable</textarea>
+                                             <div class="row mt-3">
+                                                 <div class="col-md-3">
+                                                     <button class=" btn btn-primary">Save</button>
+                                                     <button class=" btn btn-secondary">Cancel</button>
+                                                 </div>
+                                                 <div class="col-md-3">
+                                                     <button class=" btn btn-primary">Save and Send</button>
+                                                 </div>
+                                             </div>
+
+                                       </form>
+                                    </div>
+                                    <div class="col-md-4 ">
+                                        <di class="card">
+                                            <div class="card-body">
+                                             <div>
+                                             <div class="p-2">
+                                                 <h3 class="font-size-16"><strong>Order summary</strong></h3>
+                                             </div>
+                                             <div class="">
+                                                 <div class="table-responsive">
+                                                     <table class="table">
+                                                        
+                                                         <tbody>
+                                                             <!-- foreach ($order->lineItems as $line) or some such thing here -->
+                                                             <tr>
+                                                                 <td><Strong>Item Total</Strong></td>
+                                                                 <td class="text-end">$10.99</td>
+                                                                 
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>CGST[%]</td>
+                                                                 <td class="text-end">$20.00</td>
+                                                                
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>SGST[%]</td>
+                                                                 <td class="no-line text-end">$600.00</td>
+                                                                 
+                                                             </tr>
+                                                             <tr>
+                                                                 <td><input type="text" class="form-control" style="width: 150px;" placeholder="Discount" disabled>
+                                                                 </td>
+                                                                 <td class="no-line text-center"><input type="text" class="form-control" style="width: 150px;"></td>
+                                                                 
+                                                             </tr>
+                                                             
+                                                             <tr>
+                                                               
+                                                                
+                                                                 <td class="no-line ">
+                                                                     <strong>Total</strong></td>
+                                                                 <td class="">
+                                                                     <h4 class="m-0">$685.99</h4></td>
+                                                             </tr>
+                                                         </tbody>
+                                                     </table>
+                                                 </div>
+
+                                                 <div class="d-print-none">
+                                                     <div class="float-end">
+                                                         <!-- <a href="javascript:window.print()" class="btn btn-success waves-effect waves-light"><i class="fa fa-print"></i></a> -->
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </div>
                                             </div>
-                                        </div>
+                                        </di>
                                     </div>
-
                                 </div>
-                                <hr>
-                                <div class=" row col-md-12">
-                                    <div class="col md-4">
-                                        <h4><a class="black" href="">Summary</a></h4>
-                                    </div>
-                                    <div class="col md-4">
-                                        <h4><a href="">BOQ</a></h4>
-                                    </div>
-                                    <div class="col md-4">
-                                        <h4><a href="">Finances</a></h4>
-                                    </div>
-                                    <div class="col md-4">
-                                        <h4 class=center><a href="">Files</a></h4>
-                                    </div>
-
-                                </div>
-
                             </div>
                         </div>
                     </div>
                     <!-- end col -->
                 </div>
-
-                <!-- note window -->
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Note Window</h4>
-                            <p class="card-title-desc">Note are displayed here</p>
-
-                            <form class="custom-validation" action="#">
-
-                                <div class="mb-2">
-
-                                    <div>
-                                        <textarea class="form-control" rows="10" disabled></textarea>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12">
-
-                                        <div>
-                                            <textarea class="form-control" rows="3" cols="2" placeholder="Enter free text here...."></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <div class="mt-2">
-                                            <button type="submit" class="btn-lg btn-primary waves-effect waves-light me-1">
-                                                        Submit
-                                                    </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- end mote window -->
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="p-3">
-                                            <h5 class="font-size-14 mb-3 mt-0">Stages: Current Stage</h5>
-                                            <input type="text" id="range_01">
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div>
-                                    <p>
-                                        <h5>Assigned Date: </h5>
-                                    </p>
-                                    <p>
-                                        <h5>Aging:</h5>
-                                    </p>
-                                </div>
-                                <hr>
-                                <div>
-                                    <div class="d-flex gap-2 flex-wrap mb-3">
-                                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                            <span>+</span> Create Task
-                                        </a>
-
-                                    </div>
-
-                                    <div class="collapse show" id="collapseExample">
-                                        <div class="card border shadow-none card-body mb-2">
-                                            <form action="">
-                                                <div class="row">
-
-                                                    <div class="col-md-8">
-
-                                                        <input type="text" class="form-control" id="formrow-email-input" placeholder="Enter Subject">
-                                                    </div>
-
-                                                    <div class="col-md-4">
-                                                        <button type="submit" class="btn btn-primary w-md">Add</button>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-3">
-                                                    <h4 class="mb-2">Tasks</h4>
-                                                    <div class="">
-
-                                                        <div class="alert alert-info alert alert-dismissible fade show" role="alert">
-                                                            <input type="checkbox" class="" id="formrow-customCheck"> &nbsp;
-                                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                                                            </button>
-                                                            <strong>Well done!</strong> You successfully read this important alert message.
-                                                        </div>
-                                                    </div>
-                                                    <div class="">
-
-                                                        <div class="alert alert-info alert alert-dismissible fade show" role="alert">
-                                                            <input type="checkbox" class="" id="formrow-customCheck"> &nbsp;
-                                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                                                            </button>
-                                                            <strong>Well done!</strong> You successfully read this important alert message.
-                                                        </div>
-                                                    </div>
-                                                    <div class="">
-
-                                                        <div class="alert alert-info alert alert-dismissible fade show" role="alert">
-                                                            <input type="checkbox" class="" id="formrow-customCheck"> &nbsp;
-                                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                                                            </button>
-                                                            <strong>Well done!</strong> You successfully read this important alert message.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex gap-2 flex-wrap mb-3">
-                                        <a class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-                                            <span>+</span> Create Meeting
-                                        </a>
-                                    </div>
-                                    <div class="collapse show" id="collapseExample2">
-                                        <div class="card border shadow-none card-body mb-0">
-                                            <form action="">
-                                                <div class="row">
-
-                                                    <div class="col-md-8">
-
-                                                        <input type="text" class="form-control" id="formrow-email-input" placeholder="Meeting invite">
-                                                    </div>
-
-                                                    <div class="col-md-4">
-                                                        <button type="submit" class="btn btn-primary w-md">Add</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            <div class="mt-3">
-                                                <h5>Meetings</h5>
-                                                <p>http://jhgefefyuefheyfefgvefefgvhg</p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title mb-2">Project Stages</h4>
-                                <div class="accordion" id="accordionExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingOne">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                              Stage 1
-                                            </button>
-                                        </h2>
-                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p>
-                                                    <h5> Status:</h5> Completed</p>
-                                                <p>
-                                                    <h5>Date: </h5>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingTwo">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                              Stage 2
-                                            </button>
-                                        </h2>
-                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p>
-                                                    <h5> Status:</h5> In-progress</p>
-                                                <p>
-                                                    <h5>Date: </h5>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingThree">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                              Stage 3
-                                            </button>
-                                        </h2>
-                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p>
-                                                    <h5> Status:</h5> In-progress</p>
-                                                <p>
-                                                    <h5>Date: </h5>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingThree1">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
-                                                Stage 4
-                                              </button>
-                                        </h2>
-                                        <div id="collapseThree1" class="accordion-collapse collapse" aria-labelledby="headingThree1" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p>
-                                                    <h5> Status:</h5> In-progress</p>
-                                                <p>
-                                                    <h5>Date: </h5>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
             </div>
             <footer class="footer">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-12">
                             ©
@@ -623,11 +498,6 @@
     <script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
 
     <script src="assets/js/pages/form-advanced.init.js"></script>
-    <!-- Ion Range Slider-->
-    <script src="assets/libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
-
-    <!-- Range slider init js-->
-    <script src="assets/js/pages/range-sliders.init.js"></script>
 
     <!-- App js -->
     <script src="assets/js/app.js"></script>
@@ -635,5 +505,6 @@
 </body>
 
 
+<!-- Mirrored from themesbrand.com/lexa/layouts/purple/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Apr 2021 06:02:15 GMT -->
 
 </html>

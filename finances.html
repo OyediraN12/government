@@ -299,52 +299,57 @@
                                     <div class="card-body">
 
                                         <div class="row">
-                                            <div class="col-md-2 mt-2">
+                                            <div class="col-md-3 mt-2">
                                                <h5>Project ID</h5> 
                                             </div>
-                                            <div class="col-md-2 mt-2">
+                                            <div class="col-md-3 mt-2">
                                                 <h5>Custormer Name</h5> 
                                             </div>
-                                            <div class="col-md-2 mt-2">
+                                            <div class="col-md-3 mt-2">
                                                 <h5>Status</h5> 
                                             </div>
-                                           
+                                            <div class="col-md-3">
+                                                <div class="d-flex gap-2 flex-wrap mb-3">
+                                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" title="add members to the sales team">
+                                                       Project Team 
+                                                    </a>
+                                                </div>
+                                            </div>
                                             
-                                            <div class="col-md-6">
-                                                <form action="" class="">
-                                                   <div class="row">
-                                                    <div class="form-group mb-0 col-md-8">
-                                                        
-        
-                                                        <select class="select2 form-control select2-multiple " multiple="multiple"    multiple data-placeholder="Add Members to the Team">
-                                                            <optgroup label="">
-                                                                <option value="AK">Alaska</option>
-                                                                <option value="HI">Hawaii</option>
-                                                            </optgroup>
-                                                            
-                                                        </select>
-                                                    
-                                                    </div>
-                                                   <div class="col-md-2">   <button type="submit" class="btn btn-primary ">Add</button>
-                                                   </div>
-                                                   </div>
-                                                </form>
+                                            <div class="collapse show" id="collapseExample">
+                                                <div class="card border shadow-none card-body mb-0">
+                                                    <div class="col-md-12">
+                                                        <form action="">
+                                                         <div class="form-group mb-0">
+                                                             
+             
+                                                             <select class="select2 form-control select2-multiple" multiple="multiple"    multiple data-placeholder="Add Members to the team">
+                                                                 <optgroup label="">
+                                                                     <option value="AK">Alaska</option>
+                                                                     <option value="HI">Hawaii</option>
+                                                                 </optgroup>
+                                                             </select>
+             
+                                                         </div>
+                                                        </form>
+                                                     </div>
+                                                </div>
                                             </div>
                                             
                                         </div>
                                       <hr>
                                         <div class=" row col-md-12">
                                             <div class="col md-4">
-                                                <h4 ><a class="black" href="">Summary</a></h4>
+                                                <h4><a  href="">Summary</a></h4>
                                             </div>
                                             <div class="col md-4">
                                                 <h4><a href="">BOQ</a></h4>
                                             </div>
                                             <div class="col md-4">
-                                                <h4><a href="">Finances</a></h4>
+                                                <h4><a href="" class="black">Finances</a></h4>
                                             </div>
                                             <div class="col md-4">
-                                                <h4 class=center><a href="">Files</a></h4>
+                                                <h4><a href="">Files</a></h4>
                                             </div>
 
                                         </div>
@@ -354,109 +359,123 @@
                             </div>
                             <!-- end col -->
                         </div>
-                        <!-- stages -->
-                        <div class="row">
-                        <div class="col-md-4 ">
+                    
+                        <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title mb-2">Project Stages</h4>
-                                    <div class="accordion" id="accordionExample">
-                                        <div class="accordion-item">
-                                          <h2 class="accordion-header" id="headingOne">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                              Stage 1
-                                            </button>
-                                          </h2>
-                                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                              <p><h5> Status:</h5> Completed</p>
-                                              <p><h5>Date: </h5> </p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                          <h2 class="accordion-header" id="headingTwo">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                              Stage 2
-                                            </button>
-                                          </h2>
-                                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p><h5> Status:</h5> In-progress</p>
-                                                <p><h5>Date: </h5> </p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                          <h2 class="accordion-header" id="headingThree">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                              Stage 3
-                                            </button>
-                                          </h2>
-                                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p><h5> Status:</h5> In-progress</p>
-                                                <p><h5>Date: </h5> </p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingThree1">
-                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
-                                                Stage 4
-                                              </button>
-                                            </h2>
-                                            <div id="collapseThree1" class="accordion-collapse collapse" aria-labelledby="headingThree1" data-bs-parent="#accordionExample">
-                                              <div class="accordion-body">
-                                                  <p><h5> Status:</h5> In-progress</p>
-                                                  <p><h5>Date: </h5> </p>
-                                              </div>
-                                            </div>
-                                        </div>
-                                    </div>                                      
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end stages -->
-                        <!-- note window -->
-                        <div class="col-md-4 ">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Note Window</h4>
-                                    <p class="card-title-desc">Note are displayed here</p>
-    
-                                    <form class="custom-validation" action="#">
-                                      
-                                        <div class="mb-2">
+
+                                    <h4>Project FInance</h4>
+
+                                    <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                        <thead>
+                                            <tr>
+                                                <th>Payment ID</th>
+                                                <th>Request Date</th>
+                                                <th>Payment Date</th>
+                                                <th>Paid Amount</th>
+                                                <th>Balance</th>
+                                                <th>Total Estimate</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>Tiger Nixon</td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <th>jkfnefjnef</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Tiger Nixon</td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <th>jkfnefjnef</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Tiger Nixon</td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <th>jkfnefjnef</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Tiger Nixon</td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <th>jkfnefjnef</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Tiger Nixon</td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <th>jkfnefjnef</th>
+                                            </tr>
                                             
-                                            <div>
-                                                <textarea class="form-control" rows="10" disabled></textarea>
-                                            </div>
+                                        </tbody>
+                                    </table>
+                                    <div>
+                                        <h5 class="font-size-18 mb-4">Form Radios</h5>
+                                        <div class="form-check form-check-inline font-size-14">
+                                            <input class="form-check-input" type="radio" name="formRadios" id="formRadios1" checked>
+                                            <label class="form-check-label" for="formRadios1">
+                                                    Booking Payment
+                                                </label>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                               
-                                                <div>
-                                                    <textarea class="form-control" rows="3" cols="2" placeholder="Enter free text here...."></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <div class="mt-2">
-                                                    <button type="submit" class="btn-lg btn-primary waves-effect waves-light me-1">
-                                                        Submit
-                                                    </button>
-                                                </div>
-                                            </div>
+                                        <div class="form-check form-check-inline font-size-14">
+                                            <input class="form-check-input" type="radio" name="formRadios" id="formRadios2">
+                                            <label class="form-check-label" for="formRadios2">
+                                                    EFCP Payment
+                                                </label>
                                         </div>
-                                    </form>
-    
+                                        <div class="form-check form-check-inline font-size-14">
+                                            <input class="form-check-input" type="radio" name="formRadios" id="formRadios3">
+                                            <label class="form-check-label" for="formRadios2">
+                                                    Procurements(50% -paid till date)
+                                                </label>
+                                        </div>
+                                        <div class="form-check form-check-inline font-size-14">
+                                            <input class="form-check-input" type="radio" name="formRadios" id="formRadios4">
+                                            <label class="form-check-label" for="formRadios2">
+                                                    30% Before Starting factory processing
+                                                </label>
+                                        </div>
+                                        <div class="form-check form-check-inline font-size-14">
+                                            <input class="form-check-input" type="radio" name="formRadios" id="formRadios5">
+                                            <label class="form-check-label" for="formRadios2">
+                                                    15% material ready for delivery
+                                                </label>
+                                        </div>
+                                        <div class="form-check form-check-inline font-size-14">
+                                            <input class="form-check-input" type="radio" name="formRadios" id="formRadios6">
+                                            <label class="form-check-label" for="formRadios2">
+                                                    5% before handover
+                                                </label>
+                                        </div>
+                                        <div class="form-check form-check-inline font-size-14">
+                                            <input class="form-check-input" type="radio" name="formRadios" id="formRadios2">
+                                            <label class="form-check-label" for="formRadios2">
+                                                    Adhoc payment request 
+                                                </label>
+                                        </div>
+                                        <div class="text-center mt-3">
+                                            <button type="submit" class="btn btn-primary w-md">Raise Payment Request</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- end mote window -->
                         
-                      
-                        <div class="col-md-4 ">
+                      <div class="row">
+                        <div class="col-md-12">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row">
@@ -526,40 +545,11 @@
                                                </form>
                                             </div>
                                         </div>
-
-                                        <div class="d-flex gap-2 flex-wrap mb-3">
-                                            <a class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-                                                <span>+</span> Create Meeting
-                                            </a>
-                                        </div>
-                                        <div class="collapse show" id="collapseExample2">
-                                            <div class="card border shadow-none card-body mb-0">
-                                               <form action="">
-                                                <div class="row">                                                            
-                                                    
-                                                    <div class="col-md-8">
-                                                        
-                                                        <input type="text" class="form-control" id="formrow-email-input" placeholder="Meeting invite">
-                                                    </div>
-                                                
-                                                    <div class="col-md-4">
-                                                        <button type="submit" class="btn btn-primary w-md">Add</button>
-                                                    </div>
-                                                </div>
-                                               </form>
-                                                <div class="mt-3">
-                                                    <h5>Meetings</h5>
-                                                    <p>http://jhgefefyuefheyfefgvefefgvhg</p>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>
-                        </div>  
-                     </div>
+                        </div>                        
+                    </div>
                     
                 </div>
                 <footer class="footer">
