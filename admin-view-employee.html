@@ -6,7 +6,7 @@
 <head>
 
         <meta charset="utf-8" />
-        <title>Files </title>
+        <title>Admin | Items Create</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesbrand" name="author" />
@@ -174,15 +174,39 @@
                         <!-- Left Menu Start -->
                         <ul class="metismenu list-unstyled" id="side-menu">
                             <li>
-                                <a href="project-summary.html" class="waves-effect">
+                                <a href="admin-dashboard.html" class="waves-effect">
                                     <i class="mdi mdi-view-dashboard"></i>
                                     <span>Dashboard</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="profile.html" class="waves-effect">
+                            <!-- <li>
+                                <a href="" class="waves-effect">
                                     <i class="fa fa-user"></i>
                                     <span>My Profile</span>
+                                </a>
+                            </li> -->
+                            <li>
+                                <a href="vendors-list.html" class="waves-effect">
+                                    <i class="fa fa-building"></i>
+                                    <span>Vendors</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-items.html" class="waves-effect">
+                                    <i class="fa fa-shopping-basket"></i>
+                                    <span>Items</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="bank.html" class="waves-effect">
+                                    <i class="fa fa-building"></i>
+                                    <span>Bank</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="taxes.html" class="waves-effect">
+                                    <i class="fa fa-circle"></i>
+                                    <span>Taxes</span>
                                 </a>
                             </li>
                         </ul>
@@ -201,195 +225,55 @@
                 <div class="page-content">
                    
                     <div class="row">
-                        <div>
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-body">
-
-                                        <div class="row">
-                                            <div class="col-md-2 mt-2">
-                                               <h5>Project ID</h5> 
-                                            </div>
-                                            <div class="col-md-2 mt-2">
-                                                <h5>Custormer Name</h5> 
-                                            </div>
-                                            <div class="col-md-2 mt-2">
-                                                <h5>Status</h5> 
-                                            </div>
-                                            <div class="col-md-6">
-                                                <form action="" class="">
-                                                   <div class="row">
-                                                    <div class="form-group mb-0 col-md-8">
-                                                        <select class="select2 form-control select2-multiple " multiple="multiple"    multiple data-placeholder="Add Members to the Team">
-                                                            <optgroup label="">
-                                                                <option value="AK">Alaska</option>
-                                                                <option value="HI">Hawaii</option>
-                                                            </optgroup>
-                                                            
-                                                        </select>
-                                                    </div>
-                                                   <div class="col-md-2">   <button type="submit" class="btn btn-primary ">Add</button>
-                                                   </div>
-                                                   </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                      <hr>
-                                        <div class=" row col-md-12">
-                                            <div class="col md-4">
-                                                <h4 ><a href="">Summary</a></h4>
-                                            </div>
-                                            <div class="col md-4">
-                                                <h4><a href="">BOQ</a></h4>
-                                            </div>
-                                            <div class="col md-4">
-                                                <h4><a href="">Finances</a></h4>
-                                            </div>
-                                            <div class="col md-4">
-                                                <h4><a class="black" href="">Files</a></h4>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                    
-                        <div class="col-lg-8 col-md-8">
+                        <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
+                                   <div class="row">
+                                       <div class="col-md-6">
+                                         <h4>View / Edit</h4>
+                                       </div>
+                                       
+                                   </div>
+                                  <div class="col-md-12">
+                                       <form class="mb-3">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                        <label class="form-label" for="formrow-firstname-input">Employee ID</label>
+                                                        <input type="text" class="form-control" id="formrow-firstname-input" disabled>
+                                                </div> 
 
-                                    <h4 class="card-title">File List's</h4>
-                                    <p class="card-title-desc">DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function: <code>$().DataTable();</code>.
-                                    </p>
-                                    <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                        <thead>
-                                            <tr>
-                                                <th>File Name</th>
-                                                <th>Uploaded By</th>
-                                                <th>Description</th>
-                                                <th>Download</th>
-                                                <th>Delete</th>
-                                            </tr>
-                                        </thead>
+                                                <div class="col-sm-6">
+                                                    <label class="form-label" for="formrow-firstname-input">Name</label>
+                                                    <input type="text" class="form-control" id="formrow-firstname-input" disabled>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label class="form-label" for="formrow-firstname-input">Email</label>
+                                                    <input type="text" class="form-control" id="formrow-firstname-input" disabled>
+                                                </div> 
+                                                <div class="col-sm-6">
+                                                    <label class="form-label" for="formrow-firstname-input">Phone Number</label>
+                                                    <input type="text" class="form-control" id="formrow-firstname-input" disabled>
+                                                </div> 
+                                                <div class="col-sm-6">
+                                                    <label class="col-md-2 col-form-label">Status</label>
+                                                    <div class="col-md-10">
+                                                        <select class="form-control">
+                                                                <option>Not Approved</option>
+                                                                <option>Approved</option>
+                                                            </select>
+                                                    </div>
+                                                </div> 
+                                                <div class="col-sm-12 mt-2">
+                                                <button class=" btn btn-primary">Save</button>
 
-                                        <tbody>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                            </tr>
-                                            
-                                        </tbody>
-                                    </table>
-
-                                    <form action="#">
-                                        <div class="mb-3">
-                                            <label class="form-lable">Click to upload file</label>
-                                            <input type="file" class="filestyle" data-buttonname="btn-secondary">
-                                        </div>
-                                        <div>
-                                            <button class="btn btn-primary">Upload</button>
-                                        </div>
-                                    </form>
+                                                </div>
+                                            </div>
+                                       </form>
+                                  </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="col-lg-4 col-md-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="p-3">
-                                                <h5 class="font-size-14 mb-3 mt-0">Stages: Current Stage</h5>
-                                                <input type="text" id="range_01">
-                                            </div>
-                                        </div>
-                                    </div> <hr>
-                                    <div>
-                                        <p> <h5>Assigned Date: </h5></p>
-                                        <p><h5>Aging:</h5></p>
-                                    </div> <hr>
-                                    <div>
-                                        <div class="d-flex gap-2 flex-wrap mb-3">
-                                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                                <span>+</span> Create Task
-                                            </a>
-                                            
-                                        </div>
-
-                                        <div class="collapse show" id="collapseExample">
-                                            <div class="card border shadow-none card-body mb-2">
-                                               <form action="">
-                                                <div class="row">                                                            
-                                                    
-                                                    <div class="col-md-8">
-                                                        
-                                                        <input type="text" class="form-control" id="formrow-email-input" placeholder="Enter Subject">
-                                                    </div>
-                                                
-                                                    <div class="col-md-4">
-                                                        <button type="submit" class="btn btn-primary w-md">Add</button>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-3">
-                                                    <h4 class="mb-2">Tasks</h4>
-                                                    <div class="">
-                                                       
-                                                        <div class="alert alert-info alert alert-dismissible fade show" role="alert">
-                                                            <input type="checkbox" class="" id="formrow-customCheck"> &nbsp;
-                                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                                                            </button>
-                                                            <strong>Well done!</strong> You successfully read this important alert message.
-                                                        </div>
-                                                    </div>
-                                                    <div class="">
-                                                       
-                                                        <div class="alert alert-info alert alert-dismissible fade show" role="alert">
-                                                            <input type="checkbox" class="" id="formrow-customCheck"> &nbsp;
-                                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                                                            </button>
-                                                            <strong>Well done!</strong> You successfully read this important alert message.
-                                                        </div>
-                                                    </div>
-                                                    <div class="">
-                                                       
-                                                        <div class="alert alert-info alert alert-dismissible fade show" role="alert">
-                                                            <input type="checkbox" class="" id="formrow-customCheck"> &nbsp;
-                                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                                                            </button>
-                                                            <strong>Well done!</strong> You successfully read this important alert message.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                               </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-                    
+                        </div>                       
+                    </div> 
                 </div>
                 <footer class="footer">
                     <div class="container">
