@@ -6,7 +6,7 @@
 <head>
 
         <meta charset="utf-8" />
-        <title> Admin Dashboard  </title>
+        <title>Dashboard | </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesbrand" name="author" />
@@ -27,6 +27,8 @@
         <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
         <link href="assets/libs/ion-rangeslider/css/ion.rangeSlider.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+
         <style>
             .black{
                 color: #000;
@@ -155,7 +157,53 @@
                                         </div>
                                     </a>
 
-                                   
+                                    <a href="#" class="text-reset notification-item">
+                                        <div class="media">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title border-info rounded-circle ">
+                                                    <i class="mdi mdi-glass-cocktail"></i>
+                                                </span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">Your item is shipped</h6>
+                                                <div class="text-muted">
+                                                    <p class="mb-1">It is a long established fact that a reader will</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="text-reset notification-item">
+                                        <div class="media">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title border-primary rounded-circle ">
+                                                    <i class="mdi mdi-cart-outline"></i>
+                                                </span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">Your order is placed</h6>
+                                                <div class="text-muted">
+                                                    <p class="mb-1">Dummy text of the printing and typesetting industry.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="text-reset notification-item">
+                                        <div class="media">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title border-warning rounded-circle ">
+                                                    <i class="mdi mdi-message"></i>
+                                                </span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">New Message received</h6>
+                                                <div class="text-muted">
+                                                    <p class="mb-1">You have 87 unread messages</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="p-2 border-top">
                                     <a class="btn btn-sm btn-link font-size-14 w-100 text-center" href="javascript:void(0)">
@@ -194,47 +242,44 @@
                             <li class="menu-title">Main</li>
 
                             <li>
-                                <a href="admin-dashboard.html" class="waves-effect">
+                                <a href="index.html" class="waves-effect">
                                     <i class="mdi mdi-view-dashboard"></i>
+                                    <span class="badge rounded-pill bg-primary float-end">2</span>
                                     <span>Dashboard</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="admin-stages.html" class="waves-effect">
-                                    <i class="fa fa-th"></i>
-                                    <span> Stages</span>
+                                <a href="index.html" class="waves-effect">
+                                    <i class="mdi mdi-view-dashboard"></i>
+                                    <span class="badge rounded-pill bg-primary float-end">2</span>
+                                    <span>My Profile</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="vendors-list.html" class="waves-effect">
-                                    <i class="fa fa-building"></i>
+                                <a href="index.html" class="waves-effect">
+                                    <i class="mdi mdi-view-dashboard"></i>
+                                    <span class="badge rounded-pill bg-primary float-end">2</span>
                                     <span>Vendors</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="admin-items.html" class="waves-effect">
-                                    <i class="fa fa-shopping-basket"></i>
+                                <a href="index.html" class="waves-effect">
+                                    <i class="mdi mdi-view-dashboard"></i>
+                                    <span class="badge rounded-pill bg-primary float-end">2</span>
                                     <span>Items</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="bank.html" class="waves-effect">
-                                    <i class="fa fa-building"></i>
-                                    <span>Bank</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="taxes.html" class="waves-effect">
-                                    <i class="fa fa-circle"></i>
-                                    <span>Taxes</span>
-                                </a>
-                            </li>
-                            <!-- <li>
-                                <a href="javascript: void(0);" class="waves-effect">
-                                    <i class="fa fa-list"></i>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="mdi mdi-email-outline"></i>
                                     <span>BOQ</span>
                                 </a>
-                            </li> -->
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="email-inbox.html">Inbox</a></li>
+                                    <li><a href="email-read.html">Email Read</a></li>
+                                    <li><a href="email-compose.html">Email Compose</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <!-- Sidebar -->
@@ -256,64 +301,32 @@
                                 <div class="card-body">
                                    <div class="row">
                                        <div class="col-md-6">
-                                         <h4>Employee's List</h4>
+                                         <h4>Raise Payment  customers</h4>
                                        </div>
-                                       <div class="col-md-6 text-end">
-                                    </div>
-                                   <div class="table-responsive">
-                                    <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                        <thead>
-                                            <tr>
-                                                <th>Employee ID</th>
-                                                <th>Name</th>
-                                                <th>Email</th>
-                                                <th>Mobile No </th>
-                                                <th>Status</th>
-                                                <th>Edit- View</th>
-                                                
-                                            </tr>
-                                        </thead>
-
-                                        <tbody>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <th><span class="btn btn-success">Approved</span></th>
-                                                <th><a href="admin-view-employee.html" class="btn btn-secondary">Edit / View </a></th>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <th><span class="btn btn-success">Approved</span></th>
-                                                <th><a href="admin-view-employee.html" class="btn btn-secondary">Edit / View </a></th>
-                                            </tr>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <th><span class="btn btn-danger">Not Approved</span></th>
-                                                <th><a href="admin-view-employee.html" class="btn btn-secondary">Edit / View </a></th>
-                                            </tr>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <th><span class="btn btn-danger">Not Approved</span</th>
-                                                    <th><a href="admin-view-employee.html" class="btn btn-secondary">Edit / View </a></th>
-                                            </tr>
-                                        </tbody>
-                                    </table>
                                    </div>
-                                    
+                                  <div class="col-md-12">
+                                       <form class="mb-3 mt-3">
+                                            <div class="row">
+                                                 
+                                                <div class="col-sm-12 mb-2">
+                                                    <label class="form-label" for="formrow-firstname-input">Email Of the customer's</label>
+                                                    <input type="text" class="form-control" id="formrow-firstname-input" >
+                                                </div>
+                                                
+                                                <div class="col-sm-12 mb-2 mb-2">
+                                                    <textarea name="editor1" class="form-control" rows="50">Type.....</textarea>
+                                                </div>
+                                                <div class="col-sm-12 mt-2">
+                                                <button class=" btn btn-primary">Send</button>
+
+                                                </div>
+                                            </div>
+                                       </form>
+                                  </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </div>                       
+                    </div> 
                 </div>
                 <footer class="footer">
                     <div class="container">
@@ -334,7 +347,10 @@
 
         <!-- Right bar overlay-->
         <div class="rightbar-overlay"></div>
-
+        <!-- ck editor -->
+        <script>
+            CKEDITOR.replace( 'editor1' );
+        </script>
         <!-- JAVASCRIPT -->
         <script src="assets/libs/jquery/jquery.min.js"></script>
         <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>

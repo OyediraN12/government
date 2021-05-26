@@ -31,7 +31,9 @@
             .black{
                 color: #000;
             }
-            
+            .bg-gray{
+                background-color: #ececec;
+            }
         </style>
     </head>
 
@@ -494,88 +496,141 @@
                                         <p><h5>Aging:</h5></p>
                                     </div> <hr>
                                     <div>
-                                        <div class="d-flex gap-2 flex-wrap mb-3">
-                                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                                <span>+</span> Create Task
-                                            </a>
-                                            
+                                        
+                                        <div class="col-sm-6 col-md-3 mt-4">
+                                            <div class="text-center">
+                                                <!-- Small modal -->
+                                                <button type="button" class="mb-2 btn btn-primary waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".bs-example-modal-center">+ Creat Task</button>
+                                            </div>
+
+                                            <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form action="">
+                                                                <div>
+                                                                    <input type="text" class="form-control" placeholder="Task Title">
+                                                                    <button class="mt-2 btn btn-secondary">Create</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.modal-content -->
+                                                </div>
+                                                <!-- /.modal-dialog -->
+                                            </div>
+                                            <!-- /.modal -->
                                         </div>
 
-                                        <div class="collapse show" id="collapseExample">
+                                        <div >
                                             <div class="card border shadow-none card-body mb-2">
                                                <form action="">
-                                                <div class="row">                                                            
-                                                    
-                                                    <div class="col-md-8">
-                                                        
-                                                        <input type="text" class="form-control" id="formrow-email-input" placeholder="Enter Subject">
-                                                    </div>
                                                 
-                                                    <div class="col-md-4">
-                                                        <button type="submit" class="btn btn-primary w-md">Add</button>
-                                                    </div>
-                                                </div>
                                                 <div class="mt-3">
                                                     <h4 class="mb-2">Tasks</h4>
-                                                    <div class="">
-                                                       
-                                                        <div class="alert alert-info alert alert-dismissible fade show" role="alert">
-                                                            <input type="checkbox" class="" id="formrow-customCheck"> &nbsp;
-                                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                                                            </button>
-                                                            <strong>Well done!</strong> You successfully read this important alert message.
-                                                        </div>
-                                                    </div>
-                                                    <div class="">
-                                                       
-                                                        <div class="alert alert-info alert alert-dismissible fade show" role="alert">
-                                                            <input type="checkbox" class="" id="formrow-customCheck"> &nbsp;
-                                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                                                            </button>
-                                                            <strong>Well done!</strong> You successfully read this important alert message.
-                                                        </div>
-                                                    </div>
-                                                    <div class="">
-                                                       
-                                                        <div class="alert alert-info alert alert-dismissible fade show" role="alert">
-                                                            <input type="checkbox" class="" id="formrow-customCheck"> &nbsp;
-                                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                                                            </button>
-                                                            <strong>Well done!</strong> You successfully read this important alert message.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                               </form>
-                                            </div>
-                                        </div>
-
-                                        <div class="d-flex gap-2 flex-wrap mb-3">
-                                            <a class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-                                                <span>+</span> Create Meeting
-                                            </a>
-                                        </div>
-                                        <div class="collapse show" id="collapseExample2">
-                                            <div class="card border shadow-none card-body mb-0">
-                                               <form action="">
-                                                <div class="row">                                                            
-                                                    
-                                                    <div class="col-md-8">
-                                                        
-                                                        <input type="text" class="form-control" id="formrow-email-input" placeholder="Meeting invite">
-                                                    </div>
                                                 
-                                                    <div class="col-md-4">
-                                                        <button type="submit" class="btn btn-primary w-md">Add</button>
+                                                    <div class="bg-gray alert alert alert-dismissible fade show" role="alert">
+                                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                                                        </button>
+                                                        <p>Call the customer for payment on the initial project</p>
+                                                        <p>Date: 22/02/2021 &nbsp; &nbsp; </p>
+                                                        <button class="btn btn-primary" >Mark Complete</button>
+                                                    </div>
+                                                   
+                                                    <div class="bg-gray alert alert alert-dismissible fade show" role="alert">
+                                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                                                        </button>
+                                                        <p>Call the customer for payment on the initial project</p>
+                                                        <p>Date: 22/02/2021 &nbsp; &nbsp; <span class="text-center badge bg-success">completed</span></p>
+                                                        <button class="btn btn-primary" disabled>Mark Complete</button>
+                                                    </div>
+                                                    <div class="bg-gray alert alert alert-dismissible fade show" role="alert">
+                                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                                                        </button>
+                                                        <p>Call the customer for payment on the initial project</p>
+                                                        <p>Date: 22/02/2021 &nbsp; &nbsp; <span class="text-center badge bg-success">completed</span></p>
+                                                        <button class="btn btn-primary" disabled>Mark Complete</button>
                                                     </div>
                                                 </div>
                                                </form>
-                                                <div class="mt-3">
-                                                    <h5>Meetings</h5>
-                                                    <p>http://jhgefefyuefheyfefgvefefgvhg</p>
-                                                </div>
-
                                             </div>
                                         </div>
+
+                                        <div class="col-sm-6 col-md-6 mt-4">
+                                            <div class="">
+                                                <!-- Small modal -->
+                                                <button type="button" class="mb-2 btn btn-primary waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".bs-example-modal-center1">+ Create Meeting</button>
+                                            </div>
+
+                                            <div class="modal fade bs-example-modal-center1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form action="">
+                                                                <div>
+                                                                    <div>
+                                                                        <label for="">Meeting Title</label>
+                                                                    <input type="text" class="mb-2 form-control" placeholder="meeting title">
+                                                                    </div>
+                                                                    <div>
+                                                                        <label for="">Meeting url</label>
+                                                                    <input type="url" class="mb-2 form-control" placeholder="meeting url">
+                                                                    </div>
+                                                                    <div>
+                                                                        <label for="">Time</label>
+                                                                    <input type="time" class="form-control" placeholder="meeting url">
+
+                                                                    </div>
+                                                                    <button class="mt-2 btn btn-secondary">Create</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.modal-content -->
+                                                </div>
+                                                <!-- /.modal-dialog -->
+                                            </div>
+                                            <!-- /.modal -->
+                                        </div>
+                                        <div class="card border shadow-none card-body">
+                                            <h4>Meetings</h4>
+                                            <div class="bg-gray alert alert alert-dismissible fade show" role="alert">
+                                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                                                </button>
+                                                <p>Call the customer for payment on the initial project</p>
+                                                <p>Date: 22/02/2021 &nbsp; &nbsp; TIme: 8pm </p>
+                                                <button type="button" class="mb-2 btn btn-primary waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".bs-example-modal-center2"> Share</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 mt-4">
+                                          
+                                            <div class="modal fade bs-example-modal-center2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form action="">
+                                                                <div>
+                                                                    <div>
+                                                                    <input type="text" class="mb-2 form-control" placeholder="wallshome@gmaill.com">
+                                                                    </div>
+                                                                    <button class="mt-2 btn btn-secondary">Share</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.modal-content -->
+                                                </div>
+                                                <!-- /.modal-dialog -->
+                                            </div>
 
                                     </div>
                                 </div>
