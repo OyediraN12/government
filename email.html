@@ -2,78 +2,238 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body style="background-color:grey">
-    <table align="center" border="0" cellpadding="0" cellspacing="0"
-           width="700" bgcolor="white" style="border:2px solid black">
-        <tbody>
-            <tr>
-                <td align="center">
-                    <table align="center" border="0" cellpadding="0"
-                           cellspacing="0" class="col-550" width="700">
-                        <tbody>
-                            <tr>
-                                <td align="center" style="background-color: #4190f2;
-                                           height: 100px;">
-   
-                                    <a href="#" style="text-decoration: none;">
-                                        <h2><p style="color:white;
-                                            font-weight:bold;">
-                                         Invoice#%invoice Number
-                                  </p></h2>
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-            <tr style="height: 200px;">
-                <td align="" style="border: none;
-                           border-bottom: 2px solid #4cb96b; 
-                           padding-right: 20px;padding-left:20px;">
-   
-                    <p style="font-weight: bolder;font-size: 16px;
-                              letter-spacing: 0.025em;
-                               margin-left: 80px;">
-                       Dear Customer Name
-                       <br> <br>
-                       Please Find the attached the updated invoice details. Request you to release the amount of Rs
-                        <br>  <br>
-                        Below is the complete invoice summary
-                    </p>
-                    <br>
-                    
-                </td>
-            </tr>
-   
+    <title>Fabcart</title>
+    <style>
+        body{
+            background-color: #F6F6F6; 
+            margin: 0;
+            padding: 0;
+            margin-top: 30px;
+        }
+        h1,h2,h3,h4,h5,h6{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .brand-section{
+           background-color: gray;
+           padding: 10px 40px;
+        }
+        .logo{
+            width: 50%;
+        }
 
-            <tr style="border: none; 
-            background-color: #FEFEF2; 
-            height: 40px; 
-             
-            padding-bottom: 20px; 
-            text-align: center;">
-                  
-                <td height="40px" align="center">
-                <p style="color: black;
-                line-height: 1.5em;">
-                 <span style="color: black; font-size: 30px;">Invoice Amount</span> <br> <br>
-                        <span style="color: black; font-size: 30px;">Total</span>
-                        <hr style="width: 600px;">
-
-                        <span style="font-size: 20px;">Invoice Date  &nbsp;&nbsp;&nbsp; Invoice number</span> <br> <br>
-                        <span style="font-size: 20px;">Due Date  &nbsp;&nbsp;&nbsp; Due Date</span> <br> <br>
-                        <span style="font-size: 20px;">Balanace Due &nbsp;&nbsp;&nbsp; Balance </span> 
-                    </p>
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-6{
+            width: 50%;
+            flex: 0 0 auto;
+        }
+        .text-white{
+            color: #fff;
+        }
+        .company-details{
+            float: right;
+            text-align: right;
+        }
+        .body-section{
+            padding: 16px;
+            border: 1px solid gray;
+        }
+        .heading{
+            font-size: 20px;
+            margin-bottom: 08px;
+        }
+        .sub-heading{
+            color: #262626;
+            margin-bottom: 05px;
+        }
+        table{
+            background-color: #fff;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table thead tr{
+            border: 1px solid #111;
+            background-color: #f2f2f2;
+        }
+        table td {
+            vertical-align: middle !important;
             
-               </td>
-            </tr>
+        }
+        table th, table td {
+            padding-top: 08px;
+            padding-bottom: 08px;
+        }
+        .table-bordered{
+            box-shadow: 0px 0px 5px 0.5px gray;
+        }
+        .table-bordered td, .table-bordered th {
+            border: 1px solid #dee2e6;
+        }
+        .text-right{
+            text-align: end;
+        }
+        .w-20{
+            width: 20%;
+        }
+        .w-70{
+            width: 70%;
+        }
+        .w-50{
+            width: 50%;
+        }
+        .w-3{
+            width: 3%;
+        }
+        .float-right{
+            float: right;
+        }
+        .bold{
+            font-weight: bolder;
+        }
+        .center{
+            text-align: center;
+        }
+        .padding{
+            padding: 40px;
+        }
+        .right{
+            margin-left: 90px;
+        }
+        .right2{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
 
-        </tbody>
-    </table>
+    <div class="container">
+        <div class="brand-section">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="text-white">FABCART</h1>
+                </div>
+                <div class="col-6">
+                    <div class="company-details">
+                        <p class="text-white">-22, 3rd Cross, Nash Square, <br> 1st Floor, Above Canara</p>
+                      
+                        <p class="text-white">Bank 
+                            Electronic City Phase 1</p>
+                        <p class="text-white">Bangalore Karnataka 560100 India</p>
+                        <p class="text-white">GSTIN 29BGMPK4676H1ZS</p>
+                        <p class="text-white">+91 888555XXXX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="body-section">
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="heading">Invoice No.: 001</h2>
+                    <p class="sub-heading">Estimate Date. fabcart2025 </p>
+                    <p class="sub-heading">Expiry Date. 20-20-2021 </p>
+                    <p class="sub-heading">Email Address: customer@gfmail.com </p>
+                </div>
+                <div class="col-6">
+                    <p class="sub-heading">Bill TO:  </p>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="body-section">
+            <h3 class="heading">Ordered Items</h3>
+            <br>
+            <table class="table-bordered">
+                <thead>
+                    <tr>
+                        <th class="w-3">S/N</th>
+                        <th class="w-70">Item / description</th>
+                        <th class="">Quantity</th>
+                        <th class="">Rates</th>
+                        <th class="">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="center">1</td>
+                        <td class=""> Kitchen base unit - Standard - Laminate <br>
+                            * BWP(Boiling Water Proof) ISI grade plywood for the storage and shutters * white 
+                            default laminate for inner side of the storage and shutters *Laminate for outer finish  <br>
+                            * PVC edge banding with matching color (23.8X3)</td>
+                        <td class="center">10</td>
+                        <td class="center">1</td>
+                        <td class="center">10</td>
+                    </tr>
+                    <tr>
+                        <td class="center">2</td>
+                        <td class=""> Kitchen base unit - Standard - Laminate <br>
+                            * BWP(Boiling Water Proof) ISI grade plywood for the storage and shutters * white 
+                            default laminate for inner side of the storage and shutters *Laminate for outer finish  <br>
+                            * PVC edge banding with matching color (23.8X3)</td>
+                        <td class="center w-3">10</td>
+                        <td class="center">1</td>
+                        <td class="center">10</td>
+                    </tr>
+                    <tr>
+                        <td class="center">3</td>
+                        <td class=""> Kitchen base unit - Standard - Laminate <br>
+                            * BWP(Boiling Water Proof) ISI grade plywood for the storage and shutters * white 
+                            default laminate for inner side of the storage and shutters *Laminate for outer finish  <br>
+                            * PVC edge banding with matching color (23.8X3)</td>
+                        <td class="center">10</td>
+                        <td class="center">1</td>
+                        <td class="center">10</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2" class="padding">Total In Words
+                            <span class="bold">Indian Rupee Three Lakh Fifty-Eight Thousand Seven Hundred 
+                                Seventy-Three Only</span> <br> <br>
+                            “we are sure that you will find it very competitive for the Kind Of quality 
+                            We Commit. We are looking forward to delight you with our Excellent 
+                            Product and Service.”
+                            Terms & Conditions</td>
+                        <td class="w-50"> Sub Total  <span class="right">3,04,045.00</span>  <br>
+                             CGST (%) <span class="right">27,364.05 </span> <br>
+                            SGST (%) <span class="right">3,04,045.00</span> <br>
+                            Discount <span class="right"> &nbsp; 20</span> <br>
+                            <span class="bold">Total</span><span class="right"> &nbsp;  &nbsp; 40,0000</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right"></td>
+                        <td> 2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right">Grand Total</td>
+                        <td> 12.XX</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h3 class="heading">Payment Status: Paid</h3>
+            <h3 class="heading">Payment Mode: Cash on Delivery</h3>
+        </div>
+
+        <div class="body-section">
+            <p>&copy; Copyright 2021 - Fabcart. All rights reserved. 
+                <a href="https://www.fundaofwebit.com/" class="float-right">www.fundaofwebit.com</a>
+            </p>
+        </div>      
+    </div>      
+
 </body>
 </html>
