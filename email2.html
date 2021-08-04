@@ -40,6 +40,10 @@
             width: 50%;
             flex: 0 0 auto;
         }
+        .col-12{
+            width: 100%;
+            flex: 0 0 auto;
+        }
         .text-white{
             color: #fff;
         }
@@ -109,12 +113,48 @@
         .padding{
             padding: 40px;
         }
+        .padding-amount{
+            padding: 40px;
+            background-color: chartreuse;
+            font-size: 22px;
+        }
        
         .right2{
             margin-left: 40px;
         }
         .col-right{
             margin-left: 50px;
+        }
+        .under{
+            text-decoration: underline;
+        }
+        .payment-section{
+            background-color: #fff;
+            width: 90%;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+        .ml150{
+            margin-left:150px
+        }
+        .ml170{
+            margin-left:70px
+        }
+        .mt30{
+            margin-top:30px
+        }
+        .mt70{
+            margin-top:70px;
+        }
+        .mb{
+            margin-bottom: 10px;
+        }
+        .gray{
+            color: grey;
+            font-size: bold;
+        }
+        .font{
+            font-size: 18px;
         }
     </style>
 </head>
@@ -141,90 +181,56 @@
 
         <div class="body-section">
             <div class="row">
-                <div class="col-6">
-                    <h2 class="heading">Invoice No.: 001</h2>
-                    <p class="sub-heading">Estimate Date. fabcart2025 </p>
-                    <p class="sub-heading">Expiry Date. 20-20-2021 </p>
-                    <p class="sub-heading">Email Address: customer@gfmail.com </p>
-                </div>
-                <div class="col-6">
-                    <p class="sub-heading">Bill to:  </p>
-                   
+                <div class="col-12">
+                    <h3 class="center">Payment Receipt </h3>
                 </div>
             </div>
         </div>
 
         <div class="body-section">
-            <h3 class="heading">Ordered Items</h3>
+            <div class="col-12 ">
+                <div class="row payment-section">
+                    <div class="col-6">
+                        <h3 class="heading">Ordered Items</h3> <br>
+                        <p class="mt30">Payment Date <span class="under ml150">28/06/2020</span></p>
+                        <p class="mt30">Payment Mode <span class="under ml150">28/06/2020</span></p>
+                        <p class="mt30">Amount Received In Words<span class="under ml170">28/06/2020</span></p>
+                        
+                    </div>
+                    <div class="col-6">
+                        <p class="padding-amount mt70 center">Amount Received</p>
+                    </div>
+
+                    <div>
+                        <p class="mt70 gray font">Request From</p> <br> <br>
+                        <p>Taiwo Joshua</p> <br>
+                        <p>lagos nigeria</p>
+
+                    </div>
+                </div>
+                
+            </div>
             <br>
             <table class="table-bordered">
+                <h1 class="center mb">Payment For</h1>
                 <thead>
                     <tr>
-                        <th class="w-3">S/N</th>
-                        <th class="w-70">Item / description</th>
-                        <th class="">Quantity</th>
-                        <th class="">Rates</th>
-                        <th class="">Total</th>
+                        <th class="">Invoice Number</th>
+                        <th class="">Invoice Date</th>
+                        <th class="">Invoice Amount</th>
+                        <th class="">Payment Amount</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="center">1</td>
-                        <td class=""> Kitchen base unit - Standard - Laminate <br>
-                            * BWP(Boiling Water Proof) ISI grade plywood for the storage and shutters * white 
-                            default laminate for inner side of the storage and shutters *Laminate for outer finish  <br>
-                            * PVC edge banding with matching color (23.8X3)</td>
-                        <td class="center">10</td>
-                        <td class="center">1</td>
-                        <td class="center">10</td>
-                    </tr>
-                    <tr>
-                        <td class="center">2</td>
-                        <td class=""> Kitchen base unit - Standard - Laminate <br>
-                            * BWP(Boiling Water Proof) ISI grade plywood for the storage and shutters * white 
-                            default laminate for inner side of the storage and shutters *Laminate for outer finish  <br>
-                            * PVC edge banding with matching color (23.8X3)</td>
-                        <td class="center w-3">10</td>
-                        <td class="center">1</td>
-                        <td class="center">10</td>
-                    </tr>
-                    <tr>
-                        <td class="center">3</td>
-                        <td class=""> Kitchen base unit - Standard - Laminate <br>
-                            * BWP(Boiling Water Proof) ISI grade plywood for the storage and shutters * white 
-                            default laminate for inner side of the storage and shutters *Laminate for outer finish  <br>
-                            * PVC edge banding with matching color (23.8X3)</td>
-                        <td class="center">10</td>
-                        <td class="center">1</td>
-                        <td class="center">10</td>
-                    </tr>
-                    
+                        <td class="center">23232</td>
+                        <td class="center">23232</td>
+                        <td class="center">23232</td>
+                        <td class="center">23232</td>
+                    </tr>            
                 </tbody>
             </table>
-            <table class="table-bordered">
-                <tr class="text-end">
-                    <td colspan="2" class="padding">Total In Words
-                        <span class="bold">Indian Rupee Three Lakh Fifty-Eight Thousand Seven Hundred 
-                            Seventy-Three Only</span> <br> <br>
-                        “we are sure that you will find it very competitive for the Kind Of quality 
-                        We Commit. We are looking forward to delight you with our Excellent 
-                        Product and Service.” <br> <br>
-                        Terms & Conditions <br>
-                        he ply mentioned above are Anti Termite NeemPly. Authorized Signature
-                        This is a tentative quotation as per the discussion and floor plan details.
-                        Actual quotation may have variations.
-                    </td>
-                    <td class="w-40  padding"> Sub Total  <span class="right2">3,04,045.00</span>  <br>
-                         CGST (%) <span class="right2">27,364.05 </span> <br>
-                        SGST (%) <span class="right2">3,04,045.00</span> <br>
-                        Discount <span class="right2"> 20</span> <br>
-                        <span class="bold">Total</span><span class="right2 bold"> &nbsp;  &nbsp; 40,0000</span>
-
-                    </td>
-                </tr>
-            </table>
             <br>
-            <h3 class="heading">Payment Status:Not Paid</h3>
         </div>
 
         <div class="body-section">
